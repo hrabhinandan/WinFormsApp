@@ -7,6 +7,8 @@
  ### View Submissions
 * Displays the details of form submissions.
 * Allows navigation through submissions using "Previous" and "Next" buttons.
+* Delete submission: Deletes the current submission.
+* Edit submission: Opens the form to edit the current submission.
 ### Create New Submission
 * Provides a form to enter new submission details: Name, Email, Phone 
  Number, and GitHub Link.
@@ -21,9 +23,12 @@
 * Next Submission: Ctrl + N
 * Toggle Stopwatch: Ctrl + T
 * Submit Form: Ctrl + S
+* Delete Submission: Ctrl + D
+* Edit Submission: Ctrl + E
 ## Interface Description
 ### Main Window
-![slidely1](https://github.com/hrabhinandan/WinFormsApp/assets/96574240/345927ff-596e-4d7c-986f-cd9022da201e)
+
+![slidely1](https://github.com/hrabhinandan/WinFormsApp/assets/96574240/e60b8ef4-19f1-4d6c-afb7-34f10606b845)
 
 * Title: H R Abhinandan, Slidely Task 2 - Slidely Form App
 * Buttons:
@@ -31,7 +36,12 @@
   * Create New Submission (Ctrl + N): Opens the form to create a new 
  submission.
 ## View Submissions Form
-![slidely2](https://github.com/hrabhinandan/WinFormsApp/assets/96574240/d6ee7d7e-2b45-4ed6-8afa-b41d18204093)
+
+![slidely2](https://github.com/hrabhinandan/WinFormsApp/assets/96574240/38c71944-ac8d-4344-8854-bcaaf0769a3b)
+
+![slidely3](https://github.com/hrabhinandan/WinFormsApp/assets/96574240/d69686a8-98a6-4e58-99ab-69b684fa5aa0)
+
+![slidely4](https://github.com/hrabhinandan/WinFormsApp/assets/96574240/eea25e2c-2f9f-424f-882b-3c8851ea5129)
 
 * Title: H R Abhinandan, Slidely Task 2 - View Submissions
    * Fields (Read-only):
@@ -42,10 +52,13 @@
    * Stopwatch Time: Displays the stopwatch time associated with the 
      submission.
    * Buttons:
-   *Previous (Ctrl + P): Navigates to the previous submission.
+   * Previous (Ctrl + P): Navigates to the previous submission.
    * Next (Ctrl + N): Navigates to the next submission.
+   * Delete Submission (Ctrl + D): Deletes the current submission.
+   * Edit Submission (Ctrl + E): Opens the form to edit the current submission.
 ## Create Submission Form
-![slidely4](https://github.com/hrabhinandan/WinFormsApp/assets/96574240/af47c3c9-01aa-458d-a536-d2ccc0c12ada)
+
+![slidely5](https://github.com/hrabhinandan/WinFormsApp/assets/96574240/8bfbd923-0af7-4149-9cff-a34c24ed2481)
 
 * Title: H R Abhinandan, Slidely Task 2 - Create Submission
 * Fields:
@@ -61,12 +74,24 @@
    * Submit (Ctrl + S): Submits the form with the entered details and 
     the stopwatch time.
 ## View Submissions Form After Create Submission Form Submitted.
-![slidely3](https://github.com/hrabhinandan/WinFormsApp/assets/96574240/11dce492-4dca-4288-ae86-d337bcd8042f)
-## Data is stored in the Bancked has a ExpressServer stored in the db.json file.
-![slidely5](https://github.com/hrabhinandan/WinFormsApp/assets/96574240/fff1e75a-d16e-4eab-9239-bfc14a2fe5cc)
- ## '/read: A GET request with query parameter index which is a 0-index for reading the (index+1)th form submission.'
-![slidely6](https://github.com/hrabhinandan/WinFormsApp/assets/96574240/13e43d0f-abc3-4329-8786-25464af910b6)
 
+![slidely4](https://github.com/hrabhinandan/WinFormsApp/assets/96574240/bc5c4ec3-9a1c-4f9a-868e-961233db0e79)
+
+## Data is stored in the Bancked has a ExpressServer stored in the db.json file.
+
+![slidely8](https://github.com/hrabhinandan/WinFormsApp/assets/96574240/2db565fa-b53b-4949-86b3-f481f4f647f2)
+
+ ## '/read: A GET request with query parameter index which is a 0-index for reading the (index+1)th form submission.'
+
+![slidely6](https://github.com/hrabhinandan/WinFormsApp/assets/96574240/fee669ac-addf-4466-962e-45849e68b6d5)
+
+ ## '/search: A GET request with query parameter index which is a 0-index for search  by the emailid form submission.'
+
+![slidely7](https://github.com/hrabhinandan/WinFormsApp/assets/96574240/943f4492-6571-43a4-b038-bb9fa2440aad)
+
+## Https Requests comments to search fetch in the Localhost:3000 server
+  * for the read ---  http://localhost:3000/read?index=0
+  * for the search by emailids -- http://localhost:3000/search?email=abhinandanholalu2001@gmail.com
 ## How to Run
 ### Prerequisites
 * Visual Studio 2022
